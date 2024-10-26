@@ -91,6 +91,7 @@ function prompt_skwp_setup {
   # Define prompts.
   PROMPT="${_prompt_skwp_colors[3]}%n%f@${_prompt_skwp_colors[2]}%m%f ${_prompt_skwp_colors[5]}%~%f "'${git_info:+${(e)git_info[prompt]}}'"$ "
 #  RPROMPT='%F{blue}${ruby_info[version]}%f''%F{61}${python_info[version]}%f''%F{green}${node_info[version]}%f'
+  RPROMPT="[%*] // %w"
 }
 
 prompt_skwp_setup "$@"
